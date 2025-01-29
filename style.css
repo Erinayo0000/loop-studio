@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ body{
+    max-width: 1440px;
+    height: 100vh;
+ }
+ nav{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./images/desktop/image-hero.jpg');
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh;
+ }
+ .nav-list,  ul ,li ,a{
+    display: flex;
+  margin-left: 1.5rem;
+    list-style: none;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    line-height: 2.5rem;
+    font-family: 'Josefin Sans';
+ }
+ .full-nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5rem;
+ }
+ .logo-h1{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Alata';
+    font-weight: 400;
+    font-size: 2rem;
+}
+.immersive{
+    color:hsl(0, 0%, 100%) ;
+    padding: 2rem;
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    font-size: 3rem;
+}
+.immersive-div{
+    position: relative;
+    bottom: 22rem;
+    border: 2px solid hsl(0, 0%, 100%);
+margin-right: 40rem;
+margin-left: 10rem;
+}
+.leader{
+   background-image: url("./images/desktop/image-interactive.jpg");
+  background-position: 20%;
+   background-repeat: no-repeat; /* Prevents the image from repeating */
+   height: 90vh;
+   padding: auto;
+   position: relative;
+   bottom: 8rem;
+}
+.interactive-div{
+   position: relative;
+   margin-right: 30rem;
+   margin-left: 25rem;
+   top:16rem;
+   left: 15rem;
+   padding: 1rem;
+   background-color: hsl(0, 0%, 100%);
+}
+.interactive-p{
+padding: 1.6rem;
+text-align: justify;
+font-family: 'Alata';
+color: hsl(0, 0%, 55%);
+font-size: 15px;
+
+}
+.interactive-h2{
+   font-family: 'Josefin Sans';
+   font-weight: 300;
+   padding: 2rem 2rem 0 2rem;
+   color: hsl(0, 0%, 0%);
+}
+.creation-div{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1.5rem 2rem;
+   margin: 0 2rem;
+}
+.seemorebutton {
+   color: hsl(0, 0%, 0%);
+   border: 1.5px solid hsl(0, 0%, 0%);
+   padding: 0 18px;
+}
+.firstdiv{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 2rem;
+   gap: 1rem;
+   position: relative;
+}
+.second{
+   padding-top: 0;
+}
+.centered {
+   position: absolute;
+  bottom: 80px;
+  left: 130px;
+   color: hsl(0, 0%, 100%);
+   font-family: 'Josefin Sans';
+    font-weight: 300;
+    font-size: 2rem;
+ }
+ .centered1 {
+   position: absolute;
+  bottom: 80px;
+  left: 400px;
+   color: hsl(0, 0%, 100%);
+   font-family: 'Josefin Sans';
+    font-weight: 300;
+    font-size: 2rem;
+ }
+ .centered2 {
+   position: absolute;
+  bottom: 80px;
+  left: 680px;
+   color: hsl(0, 0%, 100%);
+   font-family: 'Josefin Sans';
+    font-weight: 300;
+    font-size: 2rem;
+ }
+ .centered3 {
+   position: absolute;
+  bottom: 80px;
+  left: 950px;
+   color: hsl(0, 0%, 100%);
+   font-family: 'Josefin Sans';
+    font-weight: 300;
+    font-size: 2rem;
+ }
+ footer{
+   background-color: hsl(0, 0%, 0%);
+   height: 10rem;
+ }
+ .footer-flex{
+   display: flex;
+   justify-content: space-around;
+   flex: 1;
+   padding-top: 2rem;
+ }
+ .social-media{
+   display: flex;
+   justify-content: space-between;
+   gap:3px;
+ 
+ }
+ .socials{
+   color: hsl(0, 0%, 100%);
+ }
+ .footerflex2{
+   display: flex;
+   justify-content: space-around;
+   flex: 1;
+   padding-top: 1rem;
+ }
+ .links{
+   display: flex;
+ }
+ .copyright{
+   color:  hsl(0, 0%, 41%);
+   line-height: 2.8rem;
+ }
+ .attribution p{
+   color: hsl(0, 0%, 100%);
+ }
+ .menu-icon{
+   display: none;
+ }
+ #close-icon{
+   display: none;
+ }
+ .off-canvas{
+   display: none;
+ }
+ 
+ @media (max-width:700px) {
+body{
+  overflow-x: hidden;
+}
+  .logo-h1{
+   font-size:1.5rem;
+   margin-right: 9rem;
+}
+.mobiletab{
+  display: flex;
+}
+.menu-icon{
+   display: block;
+   font-size: 2rem;
+   cursor: pointer;
+   color: white;
+ }
+ .close-icon{
+   display: block;
+   font-size: 2rem;
+
+ }
+ .nav-list {
+  display: none;
+}
+ .off-canvas.open {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+  z-index: 1000;
+  transition: 0.3s ease-in-out;
+}
+
+.off-canvas-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.off-canvas a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.immersive-div{
+  bottom: 25rem;
+margin-right: 1rem;
+margin-left: 2rem;
+}
+.immersive{
+  font-weight: 200;
+  font-size: 2.5rem;
+ }
+ .leader{
+   background-image: url("./images/mobile/image-interactive.jpg");
+  background-position: 50%;
+   height: 50vh;
+   padding: auto;
+   margin: 0 1rem;
+   position: relative;
+   bottom: 8rem;
+}
+.interactive-div{
+   position: relative;
+   margin-right: 1rem;
+   margin-left: 0rem;
+   top:22rem;
+   left: 1rem;
+   padding: 0;
+}
+.interactive-p{
+  font-size: 16px;
+  
+  }
+  .interactive-h2{
+     font-size: 1.8rem;
+  }
+.creation-div{
+  font-size: 1.8rem;
+  padding: 1rem;
+  margin: 12rem 1rem 1rem 1rem;
+
+}
+.seemorebutton{
+  display: none;
+}
+.firstdiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+  position: relative;
+}
+  }
