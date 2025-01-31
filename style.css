@@ -207,9 +207,10 @@ body{
    cursor: pointer;
    color: white;
  }
- .close-icon{
-   display: block;
-   font-size: 2rem;
+ #jclosebtn{
+   font-size: 4rem;
+   cursor: pointer;
+   color: white;
 
  }
  .nav-list {
